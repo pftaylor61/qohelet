@@ -5,6 +5,9 @@ Qohelet is a fully responsive theme for Wordpress. It has been built on the shou
 
 Qohelet is a functional theme. It is not a pretty theme. It is not meant to be a pretty theme. But everything in the background works really well. The idea is that Qohelet can be used to make new themes, or, alternatively, child themes can be built on top of it.
 
+## Version 1.4.2
+Minor adjustment to make child theme work better.
+
 ## Version 1.4.1
 A few extra tweaks added to get Kirki working properly.
 
