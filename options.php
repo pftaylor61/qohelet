@@ -99,6 +99,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your Twitter URL.', 'qohelet' ),
 		'id' => 'social_twitter',
 		'std' => '',
+                'fawe' => 'fa-twitter',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -106,6 +107,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your Facebook URL.', 'qohelet' ),
 		'id' => 'social_facebook',
 		'std' => '',
+                'fawe' => 'fa-facebook',
 		'type' => 'text' );
 		
 	$options[] = array(
@@ -113,13 +115,15 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your MeWe URL.', 'qohelet' ),
 		'id' => 'social_mewe',
 		'std' => '',
+                'fawe' => 'fa-mewe',
 		'type' => 'text' );
 
 	$options[] = array(
-		'name' => esc_html__( 'Google+', 'qohelet' ),
-		'desc' => esc_html__( 'Enter your Google+ URL.', 'qohelet' ),
-		'id' => 'social_googleplus',
+		'name' => esc_html__( 'TripAdvisor', 'qohelet' ),
+		'desc' => esc_html__( 'Enter your TripAdvisor URL.', 'qohelet' ),
+		'id' => 'social_tripadvisor',
 		'std' => '',
+                'fawe' => 'fa-tripadvisor',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -136,18 +140,13 @@ function optionsframework_options() {
 		'std' => '',
 		'type' => 'text' );
 
-	$options[] = array(
-		'name' => esc_html__( 'Dribbble', 'qohelet' ),
-		'desc' => esc_html__( 'Enter your Dribbble URL.', 'qohelet' ),
-		'id' => 'social_dribbble',
-		'std' => '',
-		'type' => 'text' );
-
+	
 	$options[] = array(
 		'name' => esc_html__( 'Tumblr', 'qohelet' ),
 		'desc' => esc_html__( 'Enter your Tumblr URL.', 'qohelet' ),
 		'id' => 'social_tumblr',
 		'std' => '',
+                'fawe' => 'fa-tumblr',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -155,6 +154,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your GitHub URL.', 'qohelet' ),
 		'id' => 'social_github',
 		'std' => '',
+                'fawe' => 'fa-github',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -162,13 +162,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your Bitbucket URL.', 'qohelet' ),
 		'id' => 'social_bitbucket',
 		'std' => '',
-		'type' => 'text' );
-
-	$options[] = array(
-		'name' => esc_html__( 'Foursquare', 'qohelet' ),
-		'desc' => esc_html__( 'Enter your Foursquare URL.', 'qohelet' ),
-		'id' => 'social_foursquare',
-		'std' => '',
+                'fawe' => 'fa-bitbucket',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -176,6 +170,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your YouTube URL.', 'qohelet' ),
 		'id' => 'social_youtube',
 		'std' => '',
+                'fawe' => 'fa-youtube',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -183,6 +178,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your Instagram URL.', 'qohelet' ),
 		'id' => 'social_instagram',
 		'std' => '',
+                'fawe' => 'fa-instagram',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -190,6 +186,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your Flickr URL.', 'qohelet' ),
 		'id' => 'social_flickr',
 		'std' => '',
+                'fawe' => 'fa-flickr',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -197,6 +194,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your Pinterest URL.', 'qohelet' ),
 		'id' => 'social_pinterest',
 		'std' => '',
+                'fawe' => 'fa-pinterest',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -204,6 +202,7 @@ function optionsframework_options() {
 		'desc' => esc_html__( 'Enter your RSS Feed URL.', 'qohelet' ),
 		'id' => 'social_rss',
 		'std' => '',
+                'fawe' => 'fa-rss',
 		'type' => 'text' );
 
 	$options[] = array(
@@ -296,7 +295,7 @@ function qohelet_options_display_sidebar() {
         $ocws_theme_screenshot_thumb = "screenshot400.png";
         $mycurtheme = wp_get_theme();
         $ocws_theme_op_text = $mycurtheme->get('Description');
-        // $ocws_theme_op_text = "<p><strong>Qohelet</strong> is a fully responsive theme for Wordpress. It has been built on the shoulders of giants, utilizing a number of other technologies, such as: 1. The Quark starter theme by Anthony Horton. 2. Quark is in turn built upon Underscores by Automattix. 3. Quark utilizes Normalize, Modernizr and Options Framework. 4. Many other smaller amounts of other technologies have been incorporated, so that I did not re-invent the wheel.</p>";
+        
         $ocws_theme_op_header = "About ".$mycurtheme->get('Name');
         
 	 ?>
