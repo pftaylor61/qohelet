@@ -387,8 +387,7 @@ function qohelet_scripts_styles() {
 
 	// Register and enqueue our icon font
 	// We're using the awesome Font Awesome icon font. http://fortawesome.github.io/Font-Awesome
-	//wp_register_style( 'fontawesome', trailingslashit( get_template_directory_uri() ) . 'css/font-awesome.min.css' , array( 'normalize' ), '4.2.0', 'all' );
-        wp_register_style('fontawesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+	wp_register_style('fontawesome', trailingslashit( get_template_directory_uri()).'css/all.css', array('normalize'), '5.6.3', 'all' );
 	wp_enqueue_style( 'fontawesome' );
         
         

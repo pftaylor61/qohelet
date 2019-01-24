@@ -5,6 +5,9 @@ Qohelet is a fully responsive theme for Wordpress. It has been built on the shou
 
 Qohelet is a functional theme. It is not a pretty theme. It is not meant to be a pretty theme. But everything in the background works really well. The idea is that Qohelet can be used to make new themes, or, alternatively, child themes can be built on top of it.
 
+## Version 1.4.4
+Qohelet now contains fontawesome version 5 within the theme. This is the most versatile option, and allows for future upgrades.
+
 ## Version 1.4.3
 TripAdvisor added to social menu. I had to serve fontawesome 5 remotely to achieve this, so examine lines 398 and 889 in functions.php. I have not yet succeeded into downloading fontawesome 5.6 to integrate it properly.
 
