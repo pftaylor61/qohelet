@@ -864,26 +864,26 @@ if ( ! function_exists( 'qohelet_get_social_media' ) ) {
 	function qohelet_get_social_media() {
 		$output = '';
 		$icons = array(
-			array( 'url' => of_get_option( 'social_twitter', '' ), 'icon' => 'fa-twitter', 'title' => esc_html__( 'Follow me on Twitter', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_facebook', '' ), 'icon' => 'fa-facebook', 'title' => esc_html__( 'Like us on Facebook', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_mewe', '' ), 'icon' => 'fa-quote-left', 'title' => esc_html__( 'Connect with me on MeWe', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_tripadvisor', '' ), 'icon' => 'fa-tripadvisor', 'title' => esc_html__( 'Review us on TripAdvisor', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_linkedin', '' ), 'icon' => 'fa-linkedin', 'title' => esc_html__( 'Connect with me on LinkedIn', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_slideshare', '' ), 'icon' => 'fa-slideshare', 'title' => esc_html__( 'Follow me on SlideShare', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_tumblr', '' ), 'icon' => 'fa-tumblr', 'title' => esc_html__( 'Follow me on Tumblr', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_github', '' ), 'icon' => 'fa-github', 'title' => esc_html__( 'Fork me on GitHub', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_bitbucket', '' ), 'icon' => 'fa-bitbucket', 'title' => esc_html__( 'Fork me on Bitbucket', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_youtube', '' ), 'icon' => 'fa-youtube', 'title' => esc_html__( 'Subscribe to me on YouTube', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_instagram', '' ), 'icon' => 'fa-instagram', 'title' => esc_html__( 'Follow me on Instagram', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_flickr', '' ), 'icon' => 'fa-flickr', 'title' => esc_html__( 'Connect with me on Flickr', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_pinterest', '' ), 'icon' => 'fa-pinterest', 'title' => esc_html__( 'Follow me on Pinterest', 'qohelet' ) ),
-			array( 'url' => of_get_option( 'social_rss', '' ), 'icon' => 'fa-rss', 'title' => esc_html__( 'Subscribe to my RSS Feed', 'qohelet' ) )
+			array( 'url' => of_get_option( 'social_twitter', '' ), 'icon' => 'fab fa-twitter', 'title' => esc_html__( 'Follow me on Twitter', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_facebook', '' ), 'icon' => 'fab fa-facebook', 'title' => esc_html__( 'Like us on Facebook', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_mewe', '' ), 'icon' => 'fas fa-quote-left', 'title' => esc_html__( 'Connect with me on MeWe', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_tripadvisor', '' ), 'icon' => 'fab fa-tripadvisor', 'title' => esc_html__( 'Review us on TripAdvisor', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_linkedin', '' ), 'icon' => 'fab fa-linkedin', 'title' => esc_html__( 'Connect with me on LinkedIn', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_slideshare', '' ), 'icon' => 'fab fa-slideshare', 'title' => esc_html__( 'Follow me on SlideShare', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_tumblr', '' ), 'icon' => 'fab fa-tumblr', 'title' => esc_html__( 'Follow me on Tumblr', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_github', '' ), 'icon' => 'fab fa-github', 'title' => esc_html__( 'Fork me on GitHub', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_bitbucket', '' ), 'icon' => 'fab fa-bitbucket', 'title' => esc_html__( 'Fork me on Bitbucket', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_youtube', '' ), 'icon' => 'fab fa-youtube', 'title' => esc_html__( 'Subscribe to me on YouTube', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_instagram', '' ), 'icon' => 'fab fa-instagram', 'title' => esc_html__( 'Follow me on Instagram', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_flickr', '' ), 'icon' => 'fab fa-flickr', 'title' => esc_html__( 'Connect with me on Flickr', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_pinterest', '' ), 'icon' => 'fab fa-pinterest', 'title' => esc_html__( 'Follow me on Pinterest', 'qohelet' ) ),
+			array( 'url' => of_get_option( 'social_rss', '' ), 'icon' => 'fas fa-rss', 'title' => esc_html__( 'Subscribe to my RSS Feed', 'qohelet' ) )
 		);
 
 		foreach ( $icons as $key ) {
 			$value = $key['url'];
 			if ( !empty( $value ) ) {
-				$output .= sprintf( '<li><a href="%1$s" title="%2$s"%3$s><span class="fa-stack fa-lg"><i class="fas fa-square fa-stack-2x"></i><i class="fab %4$s fa-stack-1x fa-inverse"></i></span></a></li>',
+				$output .= sprintf( '<li><a href="%1$s" title="%2$s"%3$s><span class="fa-stack fa-lg"><i class="fas fa-square fa-stack-2x"></i><i class="%4$s fa-stack-1x fa-inverse"></i></span></a></li>',
 					esc_url( $value ),
 					$key['title'],
 					( !of_get_option( 'social_newtab', '0' ) ? '' : ' target="_blank"' ),
