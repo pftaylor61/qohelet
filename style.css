@@ -4,7 +4,7 @@ Theme URI: http://www.oldcastleweb.com/pws/themes/qohelet/
 Author: Paul Taylor
 Author URI: http://www.oldcastleweb.com
 Description: <strong>Qohelet</strong> is a fully responsive theme for Wordpress, built by <a href="http://oldcastleweb.com">Old Castle Web Solutions</a>. It has been built on the shoulders of giants, utilizing a number of other technologies, such as: 1. The Quark starter theme by Anthony Horton. 2. Quark is in turn built upon Underscores by Automattix. 3. Quark utilizes Normalize, Modernizr and Options Framework. 4. The Qohelet theme also includes code from the Kirki plugin, to enable this and child themes to use the Customizer more easily. 5. Many other smaller amounts of other technologies have been incorporated, so that I did not re-invent the wheel.
-Version: 1.4.5
+Version: 1.4.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, gray, dark, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -266,14 +266,16 @@ blockquote {
 /* Insert the pseudo element - replicating what FontAwesome does */
 blockquote:before {
     content: "\f10d"; 
-    font-family: FontAwesome;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     float: left;
     margin-right: 10px;
 }
 
 blockquote:after { 
     content: "\f10e"; 
-    font-family: FontAwesome; 
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free"; 
     float: right; 
     margin-left: 10px; 
 }
@@ -334,7 +336,8 @@ blockquote.pull-right small {
 
 blockquote cite:before {
 	content: "\f101";
-        font-family: FontAwesome; 
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
 }
 
 blockquote cite {
@@ -1310,9 +1313,9 @@ article.sticky {
 
 /* Quote */
 .format-quote .entry-content blockquote:before {
-	font-family: 'FontAwesome';
-	font-weight: normal;
-	font-style: normal;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+       	font-style: normal;
 	speak: none;
 	vertical-align: top;
 	font-size: 40px;
@@ -1903,8 +1906,8 @@ li span.dots {
 }
 
 .main-navigation li.menu-parent-item > a:after { /* If you don't want the arrows on the top level drop down, simply remove this style */
-	font-family: 'FontAwesome';
-	font-weight: normal;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	font-style: normal;
 	speak: none;
 	vertical-align: middle;
@@ -1914,8 +1917,8 @@ li span.dots {
 }
 
 .main-navigation ul li li.menu-parent-item > a:after { /* If you don't want the arrows on the sub-menu options, simply remove this style */
-	font-family: 'FontAwesome';
-	font-weight: normal;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	font-style: normal;
 	speak: none;
 	vertical-align: middle;

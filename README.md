@@ -5,6 +5,9 @@ Qohelet is a fully responsive theme for Wordpress. It has been built on the shou
 
 Qohelet is a functional theme. It is not a pretty theme. It is not meant to be a pretty theme. But everything in the background works really well. The idea is that Qohelet can be used to make new themes, or, alternatively, child themes can be built on top of it.
 
+## Version 1.4.6
+Minor adjustments made, to get Font Awesome 5 working with the navigation system.
+
 ## Version 1.4.5
 There had to be some more adjustment to the code, to make sure that brand icons delivered class fab, while unbranded generic icons delivered class fas.
 
