@@ -14,6 +14,11 @@
 if ( ! isset( $content_width ) )
 	$content_width = 790; /* Default the embedded content width to 790px */
 
+/**
+ * Code added to use Update Manager from Code Potent
+ */
+ require_once('/updater/UpdateClient.class.php');
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.

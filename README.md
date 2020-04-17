@@ -5,10 +5,11 @@ Qohelet is a fully responsive theme for Wordpress. It has been built on the shou
 
 Qohelet is a functional theme. It is not a pretty theme. It is not meant to be a pretty theme. But everything in the background works really well. The idea is that Qohelet can be used to make new themes, or, alternatively, child themes can be built on top of it.
 
+## Version 1.5.1
+Code added from Update Manager from Code Potent
+
 ## Version 1.5
-Sorted the issue regarding archives showing the full post. This was achieved by following the instructions at:
-[https://createwptheme.com/wordpress-post-excerpt/](https://createwptheme.com/wordpress-post-excerpt/)
-It required an edit to the page content.php
+Sorted the issue regarding archives showing the full post
 
 ## Version 1.4.7
 Minor adjustment made, because of update to Old Castle Web Solutions website.
