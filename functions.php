@@ -17,7 +17,7 @@ if ( ! isset( $content_width ) )
 /**
  * Code added to use Update Manager from Code Potent
  */
- require_once('/updater/UpdateClient.class.php');
+ require_once(get_template_directory().'/updater/UpdateClient.class.php');
 
 
 /**
