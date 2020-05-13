@@ -423,7 +423,8 @@ function qohelet_scripts_styles() {
 	//}
 
 	// Enqueue the default WordPress stylesheet
-	wp_enqueue_style( 'qohelet-style', get_stylesheet_uri() );
+	$mycurtheme = wp_get_theme();
+	wp_enqueue_style( 'qohelet-style', get_stylesheet_uri(), array(), $mycurtheme->get('Version') );
 
 
 	/**
